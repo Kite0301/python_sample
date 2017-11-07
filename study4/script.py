@@ -13,10 +13,9 @@ for menu in menus:
     index += 1
 
 print('--------------')
-order = int(input('メニューの番号を選択してください: '))
-
+order = int(input('メニューの番号を入力してください: '))
 selected_menu = menus[order]
 print('選択されたメニュー: ' + selected_menu.name)
 
-count = int(input('個数を入力してください(3つ以上で100円割引): '))
+count = int(input('個数を入力してください(3つ以上で1割引): '))
 print('金額は' + str(selected_menu.get_total_price(count)) + '円です')

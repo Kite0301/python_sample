@@ -11,5 +11,5 @@ class Menu:
     def get_total_price(self, count):
         total_price = self.price * count
         if count >= 3:
-            total_price -= 100
-        return total_price
+            total_price *= 0.9
+        return int(total_price)

@@ -3,13 +3,13 @@ class Menu:
         self.name = name
         self.price = price
 
-
     def info(self):
         return str(self.price) + '円の' + self.name
 
-
     def get_total_price(self, count):
         total_price = self.price * count
+
         if count >= 3:
             total_price *= 0.9
-        return int(total_price)
+
+        return round(total_price)
